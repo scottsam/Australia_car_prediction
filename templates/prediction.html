@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Price Prediction Result</h1>
+        <p><b>The predicted price for the car is: $ {{ predicted_price }}</b></p>
+        <a href="/">Go back to the prediction home</a>
+    </div>
+</body>
+
+</html>
