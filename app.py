@@ -35,7 +35,7 @@ def convert_to_df(data):
 
 
 def predict_price(df):
-    lst = ['Year','Engine','FuelConsumption','Milleage']
+    lst = ['Year','Engine','FuelConsumption','Mileage']
     df.loc[:,lst] = df[lst].astype(np.float64)
     df.loc[:,'FuelConsumption'] = df.FuelConsumption / 100
     
